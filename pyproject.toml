@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "chronos-custom"
+version = "0.1.0"
+description = "Minimal extensions to Chronos-2: custom group topology and attention capture"
+requires-python = ">=3.9"
+dependencies = [
+    "torch",
+    "chronos-forecasting",
+]
+
+[project.optional-dependencies]
+fev = [
+    "pandas",
+    "datasets",
+    "pyarrow",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["chronos_custom*"]
