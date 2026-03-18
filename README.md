@@ -37,19 +37,19 @@ This is a middle ground useful for experiments: series within a neighborhood sha
 **Core library** (requires `torch` and `chronos`):
 
 ```bash
-pip install git+https://github.com/you/chronos-custom.git
+pip install git+https://github.com/ML4ITS/chronos-custom.git
 ```
 
 **With FEV loader** (adds `pandas`, `datasets`, `pyarrow`):
 
 ```bash
-pip install "chronos-custom[fev] @ git+https://github.com/you/chronos-custom.git"
+pip install "chronos-custom[fev] @ git+https://github.com/ML4ITS/chronos-custom.git"
 ```
 
 **Editable install from a local clone:**
 
 ```bash
-git clone https://github.com/you/chronos-custom.git
+git clone https://github.com/ML4ITS/chronos-custom.git
 cd chronos-custom
 pip install -e ".[fev]"
 ```
